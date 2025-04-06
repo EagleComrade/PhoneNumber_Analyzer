@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Information</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+            text-transform: uppercase;
+        }
+        td {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Field</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Phone Number</td>
+            <td>{{pNumber}}</td>
+        </tr>
+        <tr>
+            <td>Valid</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Geolocation</td>
+            <td>{{geoL}}</td>
+        </tr>
+        <tr>
+            <td>Carrier</td>
+            <td>{{cName}}</td>
+        </tr>
+        <tr>
+            <td>Timezone</td>
+            <td>{{tzone}}</td>
+        </tr>
+    </table>
+</body>
+</html>
